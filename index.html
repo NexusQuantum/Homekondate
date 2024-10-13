@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>こんだて表</title>
+  <style>
+    body {
+      background-color: burlywood;
+    }
+
+    .title {
+      margin: 5px 5px 5px 5px;
+      color: red;
+      font-size: xxx-large;
+      border-radius: 5px;
+      padding-right: 5px;
+    }
+
+    .subtitle {
+      border-bottom: 1px black solid;
+      margin-bottom: 5px;
+      font-size: x-large;
+      border-radius: 5px;
+      padding-right: 5px;
+    }
+
+    .main-kondate-title {
+      margin-top: 50px;
+      color: red;
+    }
+
+    main {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .kondate {
+      padding-left: 50px;
+      display: block;
+    }
+
+    .kondate-1 {
+      display: block;
+    }
+
+    .p {
+      text-align: center;
+      border-bottom: 1px solid red;
+    }
+
+    .p- {
+      text-align: center;
+    }
+
+    .text-icon {
+      display: block;
+    }
+    #time-text-0,
+    #time-text-1 {
+      margin-top: 50px;
+    }
+
+    .time-text {
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 5px;
+      margin-top: 20px;
+    }
+
+    .set-button {
+      border-radius: 20px;
+      background-color: red;
+      width: 60px;
+      height: 50px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="title">こんだて表</h1>
+  <h5 class="subtitle">毎週のこんだて表を生成するサイトです</h5>
+  <h1 class="main-kondate-title">こんだて表</h2>
+  <main>
+
+    <!-- 1.魚の時には魚マーク -->
+     <!-- 2.平日のあさごはんのじかんをきめる -->
+      <!-- 3.日曜日・土日・祝　時間を決めない -->
+
+    <div class="kondate-1">
+      <p class="p">日</p>
+      <img src="gohan.png" alt="ご飯の画像です!!">
+      <img src="gohan.png" alt="ご飯の画像です!!">
+      <img src="gohan.png" alt="ご飯の画像です!!">
+    </div>
+
+    <div class="kondate">
+      <p class="p">月</p>
+      <div class="text-icon">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+        <img src="sakana.png" alt="ご飯の画像です!!">
+      </div>
+    </div>
+
+    <div class="kondate">
+      <p class="p">火</p>
+      <div class="text-icon">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+      </div>
+    </div>
+
+    <div class="kondate">
+      <p class="p">水</p>
+      <div class="text-icon">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+      </div>
+    </div>
+
+    <div class="kondate">
+      <p class="p">木</p>
+      <div class="text-icon">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+        <img src="sakana.png" alt="ご飯の画像です!!">
+      </div>
+    </div>
+
+    <div class="kondate">
+      <p class="p">金</p>
+      <div class="text-icon">
+        <p class="p-"></p>
+        <img src="gohan.png" alt="ご飯の画像です!!">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+      </div>
+    </div>
+
+    <div class="kondate">
+      <p class="p">土</p>
+      <div class="text-icon">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+        <img src="gohan.png" alt="ご飯の画像です!!">
+      </div>
+    </div>
+  </main>
+  <div class="time-text">
+    <h2 id="time-text-0">平日の朝ごはん時間!!</h2>
+    <div class="set-button"><button onclick="add()" style="text-align: center;" class="set-button">時間を設定</button></div>
+    <h3 id="time-text-1">時間</h3>
+  </div>
+  <script src="script.js"></script>
+  <script>
+
+  </script>
+</body>
+</html>
